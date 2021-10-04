@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Display from './Display.js';
+import Button from './Button.js';
 import './App.css';
 
 const App = () => {
@@ -11,12 +12,12 @@ const App = () => {
   return (
     <div className="App">
       <Display counter={counter} />
-      <button onClick={increaseByOne}>
-        +
-      </button>
-      <button onClick={setToZero}>
-        Reset
-      </button>
+      <Button onClick={increaseByOne} 
+      text='plus'
+      />
+      <Button onClick={setToZero} 
+      text='Reset'
+      />
     </div>
   );
 }

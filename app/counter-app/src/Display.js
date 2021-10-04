@@ -4,4 +4,4 @@ const Display = (props) => {
     )
 }
 
-export default Display
+export default Display;
