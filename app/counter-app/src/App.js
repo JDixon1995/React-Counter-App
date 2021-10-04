@@ -8,15 +8,19 @@ const App = () => {
   const [ counter, setCounter ] = useState(0);
   const increaseByOne = () => setCounter( counter + 1);
   const setToZero = () => setCounter( 0 );
+  const decreaseByOne = () => setCounter( counter - 1 );
 
   return (
     <div className="App">
       <Display counter={counter} />
       <Button onClick={increaseByOne} 
-      text='plus'
+      text='+'
       />
       <Button onClick={setToZero} 
       text='Reset'
+      />
+      <Button onClick={decreaseByOne}
+      text='-'
       />
     </div>
   );
